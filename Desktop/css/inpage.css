@@ -1,0 +1,405 @@
+@charset "UTF-8";
+/* CSS Document */
+body, body {
+  border: 0 none;
+  height: 600px;
+  margin: 0 auto;
+  outline: 0 none;
+  padding: 0;
+  vertical-align: baseline;
+  width: 900px; }
+
+@font-face {
+  font-family: 'sky_textbold';
+  src: url("../fonts/sky_bold-webfont.eot");
+  src: url("../fonts/sky_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sky_bold-webfont.woff") format("woff"), url("../fonts/sky_bold-webfont.ttf") format("truetype"), url("../fonts/sky_bold-webfont.svg#sky_textbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'sky_textmedium';
+  src: url("../fonts/sky_med-webfont.eot");
+  src: url("../fonts/sky_med-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/sky_med-webfont.woff") format("woff"), url("../fonts/sky_med-webfont.ttf") format("truetype"), url("../fonts/sky_med-webfont.svg#sky_textmedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+#guide {
+  background-image: url("../images/guide.jpg");
+  width: 900px;
+  height: 600px;
+  background-size: 100%;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 10000;
+  left: 510px; }
+
+/* === Start Frame === */
+/* === End Frame === */
+#endFrame {
+  position: absolute;
+  width: 900px;
+  height: 600px;
+  top: 0px;
+  left: 899px;
+  background-image: url("../images/900x600_end.jpg");
+  background-size: 100%;
+  z-index: 101;
+  top: 0px; }
+
+.findOutMore {
+  height: 40px;
+  left: 458px;
+  position: absolute;
+  top: 410px;
+  width: 213px;
+  cursor: pointer; }
+
+.playAgain {
+  height: 41px;
+  left: 225px;
+  position: absolute;
+  top: 411px;
+  width: 213px;
+  z-index: 11;
+  cursor: pointer; }
+
+.spinWheel {
+  background-image: url("../images/spinWheel.gif");
+  background-size: 100% auto;
+  height: 21px;
+  left: 436px;
+  position: relative;
+  top: 307px;
+  width: 21px; }
+
+.text1 {
+  background-image: url("../images/endFrame_text1.png");
+  background-size: 100% auto;
+  height: 93px;
+  left: 90px;
+  opacity: 0;
+  position: absolute;
+  top: 110px;
+  width: 715px; }
+
+.text2 {
+  background-image: url("../images/endFrame_text2.png");
+  background-size: 100% auto;
+  height: 119px;
+  left: 262px;
+  opacity: 0;
+  position: absolute;
+  top: 97px;
+  width: 376px; }
+
+/* Invisible button for background clickthrough. */
+.endFrameExit {
+  cursor: pointer;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 10; }
+
+.legals {
+  background-image: url("../images/legals.png");
+  cursor: pointer;
+  height: 377px;
+  position: absolute;
+  top: 600px;
+  width: 900px;
+  z-index: 12; }
+
+.legalsBtn {
+  cursor: pointer;
+  height: 50px;
+  left: 780px;
+  position: absolute;
+  top: 550px;
+  width: 120px;
+  z-index: 11; }
+
+/* === Time Out Frame === */
+/* === Game Frame === */
+#preloadAssets {
+  display: none; }
+
+.mainBorder {
+  width: 298px;
+  height: 598px;
+  border: 1px solid #000;
+  position: absolute;
+  top: 0px; }
+
+/* Div layer for the entire expanded. */
+#container_dc {
+  position: relative;
+  width: 898px;
+  height: 598px;
+  margin: 0 auto;
+  display: none;
+  overflow: hidden;
+  border: 1px solid #000;
+  top: 0px; }
+
+#content_dc {
+  position: absolute;
+  width: 900px;
+  height: 600px;
+  top: 0px;
+  left: 0px;
+  background-image: url("../images/900x600.jpg");
+  background-size: 100%;
+  z-index: 100;
+  top: 0px; }
+
+/* Invisible button for background clickthrough. */
+#gameExit {
+  bottom: 0;
+  cursor: pointer;
+  height: 85px;
+  opacity: 0;
+  position: absolute;
+  width: 900px;
+  z-index: 1000; }
+
+.hitArea {
+  background-color: blue;
+  height: 300px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 215px;
+  width: 900px;
+  z-index: 3; }
+
+.plusOne {
+  font-family: 'sky_textbold';
+  font-size: 15pt;
+  height: 10px;
+  left: 140px;
+  position: absolute;
+  top: 350px;
+  width: 10px;
+  opacity: 0; }
+
+.instructions {
+  background-image: url("../images/instructions.png");
+  background-size: 100% auto;
+  height: 350px;
+  left: 221px;
+  opacity: 0;
+  position: absolute;
+  top: 124px;
+  width: 458px; }
+
+.timeUp span {
+  color: #e31c36;
+  font-family: "sky_textbold";
+  font-size: 38pt;
+  left: 48%;
+  margin-left: -20px;
+  position: relative;
+  top: 121px;
+  width: 10px; }
+
+.timeUp {
+  background-image: url("../images/timesUpText.png");
+  background-size: 100% auto;
+  height: 199px;
+  left: 256px;
+  opacity: 0;
+  position: absolute;
+  top: 100px;
+  width: 388px; }
+  .timeUp span {
+    color: #e31c36;
+    font-family: "sky_textbold";
+    font-size: 38pt;
+    left: 48%;
+    margin-left: -20px;
+    position: relative;
+    top: 121px;
+    width: 10px; }
+
+.ballShadow0, .ballShadow1, .ballShadow2, .ballShadow3 {
+  background: url("../images/ballShadow.png") no-repeat scroll 0 0/100% auto transparent;
+  height: 100px;
+  left: 121px;
+  position: absolute;
+  top: 566px;
+  width: 60px; }
+
+.ballShadow1, .ballShadow2, .ballShadow3 {
+  opacity: 0; }
+
+#paper0, #paper1, #paper2, #paper3, #paper4 {
+  height: 60px;
+  left: 120px;
+  position: absolute;
+  top: 540px;
+  width: 65px;
+  z-index: 2;
+  opacity: 0; }
+
+#paper0 {
+  background: url("../images/paper0.png") no-repeat scroll 0 0/100% auto transparent;
+  opacity: 0; }
+
+#paper1 {
+  background: url("../images/paper1.png") no-repeat scroll 0 0/100% auto transparent;
+  opacity: 0; }
+
+#paper2 {
+  background: url("../images/paper2.png") no-repeat scroll 0 0/100% auto transparent;
+  opacity: 0; }
+
+#paper3 {
+  background: url("../images/paper3.png") no-repeat scroll 0 0/100% auto transparent;
+  opacity: 0; }
+
+.message0, .message1, .message2, .message3, .message4, .message5 {
+  opacity: 0;
+  background-size: 100% auto;
+  height: 78px;
+  left: 324px;
+  position: absolute;
+  top: 100px;
+  width: 265px; }
+
+.message0 {
+  background-image: url("../images/message0.png"); }
+
+.message1 {
+  background-image: url("../images/message1.png"); }
+
+.message2 {
+  background-image: url("../images/message2.png"); }
+
+.message3 {
+  background-image: url("../images/message3.png"); }
+
+.message4 {
+  background-image: url("../images/message4.png"); }
+
+.message5 {
+  background-image: url("../images/message5.png"); }
+
+#binContainer {
+  height: 90px;
+  left: -100px;
+  position: absolute;
+  top: 338px;
+  width: 60px;
+  opacity: 0; }
+
+#bin {
+  background: url("../images/bin.png") no-repeat scroll 0 0/100% auto transparent;
+  height: 83px;
+  position: relative;
+  width: 72px;
+  z-index: 1; }
+
+#binTop {
+  background: url("../images/binTop.png") no-repeat scroll 0 0/100% auto transparent;
+  height: 18px;
+  top: 14px;
+  position: relative;
+  width: 72px;
+  z-index: 1; }
+
+#binRectLeft {
+  XXbackground-color: red;
+  height: 5px;
+  left: 1px;
+  position: absolute;
+  top: 23px;
+  width: 1px; }
+
+#binRectRight {
+  background-color: green;
+  height: 5px;
+  left: 64px;
+  position: absolute;
+  top: 23px;
+  width: 1px; }
+
+#scoreHolder {
+  background-size: 100% auto;
+  height: 78px;
+  left: 86px;
+  position: absolute;
+  top: 22px;
+  width: 280px; }
+
+.lozTimer {
+  background-image: url("../images/loz.png");
+  background-size: 100% auto;
+  height: 60px;
+  left: -4px;
+  position: absolute;
+  top: 19px;
+  width: 89px; }
+
+.lozScore {
+  background-image: url("../images/loz.png");
+  background-size: 100% auto;
+  height: 60px;
+  left: 98px;
+  position: absolute;
+  top: 19px;
+  width: 89px; }
+
+#score {
+  color: #515151;
+  font-size: 11pt;
+  height: 70px;
+  left: 10px;
+  position: absolute;
+  top: -2px;
+  width: 59px; }
+  #score p {
+    font-family: 'sky_textbold';
+    width: 100px;
+    height: 20px;
+    position: relative;
+    margin: 10px;
+    padding: 0px;
+    top: 0px; }
+    #score p span {
+      font-family: 'sky_textmedium';
+      font-size: 32pt;
+      left: -5px;
+      position: relative;
+      top: -3px; }
+
+#timer {
+  color: #e52a23;
+  font-size: 11pt;
+  height: 80px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: -2px;
+  width: 140px; }
+  #timer p {
+    font-family: 'sky_textbold';
+    width: 100px;
+    height: 20px;
+    position: relative;
+    margin: 10px;
+    padding: 0px;
+    top: 0px;
+    left: 80px; }
+    #timer p span {
+      font-family: 'sky_textmedium';
+      font-size: 32pt;
+      left: 2px;
+      position: relative;
+      top: -3px;
+      width: 100px;
+      text-align: center; }
+
+:focus {
+  outline: none; }
+
+::-moz-focus-inner {
+  border: 0; }
